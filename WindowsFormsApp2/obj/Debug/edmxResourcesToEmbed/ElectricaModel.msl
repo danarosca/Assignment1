@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ElectricaModelStoreContainer" CdmEntityContainer="ElectricaEntities1">
+    <EntitySetMapping Name="Bills">
+      <EntityTypeMapping TypeName="ElectricaModel.Bill">
+        <MappingFragment StoreEntitySet="Bills">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="paid" ColumnName="paid" />
+          <ScalarProperty Name="clientId" ColumnName="clientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientNumbers">
+      <EntityTypeMapping TypeName="ElectricaModel.ClientNumber">
+        <MappingFragment StoreEntitySet="ClientNumbers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="clientNr" ColumnName="clientNr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="ElectricaModel.Client">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="IDN" ColumnName="IDN" />
+          <ScalarProperty Name="PNC" ColumnName="PNC" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Complaints">
+      <EntityTypeMapping TypeName="ElectricaModel.Complaint">
+        <MappingFragment StoreEntitySet="Complaints">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="serviceQ" ColumnName="serviceQ" />
+          <ScalarProperty Name="quickR" ColumnName="quickR" />
+          <ScalarProperty Name="customerQ" ColumnName="customerQ" />
+          <ScalarProperty Name="shortDescription" ColumnName="shortDescription" />
+          <ScalarProperty Name="longDescription" ColumnName="longDescription" />
+          <ScalarProperty Name="clientId" ColumnName="clientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ElectricaModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="rights" ColumnName="rights" />
+          <ScalarProperty Name="registrationNr" ColumnName="registrationNr" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
